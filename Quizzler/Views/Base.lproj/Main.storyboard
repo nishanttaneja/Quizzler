@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY3-Ms-jrk">
                                 <rect key="frame" x="20" y="84" width="374" height="626"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kre-0A-7PB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kre-0A-7PB">
                                         <rect key="frame" x="20" y="292" width="334" height="42"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,10 +32,10 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="kre-0A-7PB" secondAttribute="trailing" constant="20" id="9DP-B3-OXl"/>
+                                    <constraint firstItem="kre-0A-7PB" firstAttribute="leading" secondItem="BY3-Ms-jrk" secondAttribute="leading" constant="20" id="56H-Sy-LIq"/>
                                     <constraint firstItem="kre-0A-7PB" firstAttribute="centerY" secondItem="BY3-Ms-jrk" secondAttribute="centerY" id="AoU-uE-K2P"/>
                                     <constraint firstItem="kre-0A-7PB" firstAttribute="centerX" secondItem="BY3-Ms-jrk" secondAttribute="centerX" id="Teb-Tv-L6J"/>
-                                    <constraint firstItem="kre-0A-7PB" firstAttribute="leading" secondItem="BY3-Ms-jrk" secondAttribute="leading" constant="20" id="XJe-jg-6U7"/>
+                                    <constraint firstAttribute="trailing" secondItem="kre-0A-7PB" secondAttribute="trailing" constant="20" id="bIy-35-vJI"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6oZ-B8-qzI">
@@ -50,6 +50,9 @@
                                         <state key="normal" title="True" backgroundImage="buttonBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZkP-Pk-hmT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxr-pI-U2z">
                                         <rect key="frame" x="0.0" y="60" width="374" height="50"/>
@@ -57,6 +60,9 @@
                                         <state key="normal" title="False" backgroundImage="buttonBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2M-aB-nBe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -84,6 +90,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="questionLabel" destination="kre-0A-7PB" id="tXx-Ev-cXN"/>
+                        <outlet property="quizProgress" destination="C30-iv-kdo" id="Au5-FI-j83"/>
+                        <outlet property="scoreLabel" destination="pI2-nl-jai" id="60k-qV-Sks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
