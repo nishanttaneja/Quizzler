@@ -28,6 +28,8 @@
 		B4B7F79424FA3C48002C5445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4B7F79B24FA4946002C5445 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		B4B7F79D24FA498C002C5445 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		B4B7F7A224FA4FBF002C5445 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B4B7F7A324FA5076002C5445 /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,8 @@
 		B4B7F77A24FA3C45002C5445 = {
 			isa = PBXGroup;
 			children = (
+				B4B7F7A224FA4FBF002C5445 /* README.md */,
+				B4B7F7A324FA5076002C5445 /* HomeScreen.png */,
 				B4B7F78524FA3C45002C5445 /* Quizzler */,
 				B4B7F78424FA3C45002C5445 /* Products */,
 			);
